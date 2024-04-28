@@ -1,1 +1,41 @@
 GET http://localhost:3000/api/employees
+
+### 
+POST http://localhost:3000/api/employees
+Content-Type: application/json
+
+{
+    "name": "Rosario",
+    "surname": "Parrales",
+    "address": "Conchinchina nº 128",
+    "email": "parraless@gmail.com",
+    "phone": "898144440124",
+    "notes": "This is a note parrales"
+}
+
+###
+PUT http://localhost:3000/api/employees/6
+Content-Type: application/json
+
+{
+    "name": "MPepopa José",
+    "surname": "Peralda",
+    "address": "Conchinchina nº 128",
+    "email": "parraless@gmail.com",
+    "phone": "898144440124",
+    "notes": "This is a note parrales"
+}
+
+###
+DELETE http://localhost:3000/api/employees/6
+
+###
+PATCH http://localhost:3000/api/employees/5
+Content-Type: application/json
+
+{
+    "name": "Francisco"
+}
+
+###
+GET http://localhost:3000/api/employees/5

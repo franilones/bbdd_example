@@ -1,17 +1,18 @@
+require('module-alias/register');
+require('dotenv').config();
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+var indexRouter = require('@routes/index');
+var usersRouter = require('@routes/users');
 
 
 require('./dbConfig.js');
 var app = express();
-const apiRouter = require('./routes/api');
-app.use('/api', apiRouter);
+const apiRouter = require('@routes/api');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -23,6 +24,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use('/api', apiRouter);
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
