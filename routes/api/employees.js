@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { getAll, create, updatePut, updatePatch, deleteById, getById } = require('../../models/employeesModel');
+const { getAll, create, updatePut, updatePatch, deleteById, getById } = require('../../models/employeesDAO');
 router.get('/', (req, res) => {
     getAll()
         .then(employees => res.json(employees[0]))
