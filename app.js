@@ -11,6 +11,7 @@ var usersRouter = require('@routes/users');
 
 
 require('./configs/dbConfig.js');
+const logMiddleware = require('@middleware/logMiddleware')
 var app = express();
 const apiRouter = require('@routes/api');
 
@@ -19,6 +20,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
 app.use(logger('dev'));
+app.use(logMiddleware);
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
@@ -27,7 +29,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/api', apiRouter);
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
   next(createError(404));
