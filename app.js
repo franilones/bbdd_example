@@ -10,7 +10,7 @@ var indexRouter = require('@routes/index');
 var usersRouter = require('@routes/users');
 
 
-require('./dbConfig.js');
+require('./configs/dbConfig.js');
 var app = express();
 const apiRouter = require('@routes/api');
 

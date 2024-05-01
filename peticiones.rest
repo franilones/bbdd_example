@@ -1,20 +1,25 @@
+## All
 GET http://localhost:3000/api/employees
+
+### ByID
+GET http://localhost:3000/api/employees/22
+
 
 ### 
 POST http://localhost:3000/api/employees
 Content-Type: application/json
 
 {
-    "name": "Rosario",
-    "surname": "Parrales",
+    "name": "Rafaela",
+    "surname": "Benitez",
     "address": "Conchinchina nº 128",
-    "email": "parraless@gmail.com",
-    "phone": "898144440124",
+    "email": "rafaela@gmail.com",
+    "phone": "8981444333334",
     "notes": "This is a note parrales"
 }
 
 ###
-PUT http://localhost:3000/api/employees/6
+PUT http://localhost:3000/api/employees/21
 Content-Type: application/json
 
 {
@@ -27,15 +32,13 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://localhost:3000/api/employees/6
+DELETE http://localhost:3000/api/employees/22
 
 ###
-PATCH http://localhost:3000/api/employees/5
+PATCH http://localhost:3000/api/employees/22
 Content-Type: application/json
 
 {
-    "name": "Francisco"
+    "surname": "Olmos"
 }
 
-###
-GET http://localhost:3000/api/employees/5
