@@ -3,3 +3,83 @@
   "method": "GET",
   "url": "/api/employees"
 }
+{
+  "time": "2024-05-01T20:32:33.557Z",
+  "method": "POST",
+  "url": "/api/user/register"
+}
+{
+  "time": "2024-05-01T20:32:43.444Z",
+  "method": "POST",
+  "url": "/api/user/register"
+}
+{
+  "time": "2024-05-01T20:33:40.141Z",
+  "method": "GET",
+  "url": "/api/user"
+}
+{
+  "time": "2024-05-01T20:37:57.387Z",
+  "method": "POST",
+  "url": "/api/user/register"
+}
+{
+  "time": "2024-05-01T20:38:17.269Z",
+  "method": "POST",
+  "url": "/api/user/register"
+}
+{
+  "time": "2024-05-01T20:39:52.162Z",
+  "method": "GET",
+  "url": "/api/user"
+}
+{
+  "time": "2024-05-01T20:41:22.482Z",
+  "method": "POST",
+  "url": "/api/user/register"
+}
+{
+  "time": "2024-05-01T20:42:08.158Z",
+  "method": "GET",
+  "url": "/api/user"
+}
+{
+  "time": "2024-05-01T20:43:03.562Z",
+  "method": "POST",
+  "url": "/api/user/register"
+}
+{
+  "time": "2024-05-01T20:43:12.656Z",
+  "method": "GET",
+  "url": "/api/user"
+}
+{
+  "time": "2024-05-01T20:46:17.756Z",
+  "method": "GET",
+  "url": "/api/user"
+}
+{
+  "time": "2024-05-01T20:46:35.642Z",
+  "method": "GET",
+  "url": "/api/user"
+}
+{
+  "time": "2024-05-01T20:47:16.544Z",
+  "method": "GET",
+  "url": "/api/user"
+}
+{
+  "time": "2024-05-01T20:47:34.077Z",
+  "method": "GET",
+  "url": "/api/user"
+}
+{
+  "time": "2024-05-01T20:47:35.813Z",
+  "method": "GET",
+  "url": "/api/user"
+}
+{
+  "time": "2024-05-01T20:52:44.615Z",
+  "method": "GET",
+  "url": "/api/user"
+}

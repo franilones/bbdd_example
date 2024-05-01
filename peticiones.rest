@@ -42,3 +42,16 @@ Content-Type: application/json
     "surname": "Olmos"
 }
 
+### Create user example
+POST http://localhost:3000/api/user/register
+Content-Type: application/json
+
+{
+    "name": "María Luisa",
+    "username": "Mlusia",
+    "email": "Mlusia@gmail.com",
+    "password": "654321"
+}
+
+### Get all users
+GET http://localhost:3000/api/user
