@@ -1,9 +1,9 @@
 ## All
 GET http://localhost:3000/api/employees
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJ1c2VybmFtZSI6Ik1sdXNpYSIsImVtYWlsIjoiTWx1c2lhQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTcxNDY2MjEwNCwiZXhwIjoxNzE0NjYyNDA0fQ.Aq6I4YDo1_tfCHOHqjUYVsU0XUJzP_jdsnZlqfQdYuc
 
 ### ByID
-GET http://localhost:3000/api/employees/22
-
+GET http://localhost:3000/api/employees/3
 
 ### 
 POST http://localhost:3000/api/employees
@@ -55,3 +55,12 @@ Content-Type: application/json
 
 ### Get all users
 GET http://localhost:3000/api/user
+
+### Login
+POST http://localhost:3000/api/user/login
+Content-Type: application/json
+
+{
+  "email": "Mlusia@gmail.com",
+  "password": "654321"
+}
