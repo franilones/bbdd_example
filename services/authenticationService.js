@@ -27,6 +27,18 @@ const getUserId = async(id) => {
     }catch(err){
         throw err;
     }
-
 }
-module.exports = { registerUser, getAllUsers, getUserById: getUserId };
+
+
+const getUserByEmail = async (email) => {
+    try {
+        const user = await User.findOne({where: {email: email}});
+        if (!user) {
+            throw new Error('User not found');
+        }
+        return user;
+    } catch (err) {
+        throw err;
+    }
+}
+module.exports = { registerUser, getAllUsers, getUserById: getUserId, getUserByEmail };
