@@ -1,7 +1,8 @@
 const router = require('express').Router();
 const { getAllEmployees , getEmployeeById, createEmployee, updateEmployeePut, updateEmployeePatch, removeEmployee} = require('@controllers/employeesController');
+const authenticateJWTMiddleware = require('@middleware/authenticationJWTMiddleware');
 
-router.get('/', getAllEmployees);
+router.get('/', authenticateJWTMiddleware,  getAllEmployees);
 
 router.get('/:employeeId', getEmployeeById);
 
